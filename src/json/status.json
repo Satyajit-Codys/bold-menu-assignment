@@ -1,0 +1,62 @@
+{
+  "data": {
+    "carbonado_z_route_status": [
+      {
+        "id": 5,
+        "title": "Warehouse Stock-in "
+      },
+      {
+        "id": 8,
+        "title": "Stockist Stock-in"
+      },
+      {
+        "id": 11,
+        "title": "Stockist Dispatch - Corporate "
+      },
+      {
+        "id": 12,
+        "title": "Retailer Stock-in"
+      },
+      {
+        "id": 13,
+        "title": "Retailer Sale"
+      },
+      {
+        "id": 6,
+        "title": "Warehouse Dispatch - Customer"
+      },
+      {
+        "id": 2,
+        "title": "Warehouse Dispatch - Stockist "
+      },
+      {
+        "id": 1,
+        "title": "Warehouse Dispatch - Retail"
+      },
+      {
+        "id": 14,
+        "title": "Warehouse Dispatch - Corporate"
+      },
+      {
+        "id": 10,
+        "title": "Stockist Dispatch - Customer "
+      },
+      {
+        "id": 9,
+        "title": "Stockist Dispatch - Retail "
+      },
+      {
+        "id": 3,
+        "title": "Quality Check - Failed"
+      },
+      {
+        "id": 4,
+        "title": "Quality Check - Passed"
+      },
+      {
+        "id": 15,
+        "title": "New Tag"
+      }
+    ]
+  }
+}

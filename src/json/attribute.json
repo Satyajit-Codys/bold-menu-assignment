@@ -1,0 +1,60 @@
+{
+  "data": {
+    "carbonado_z_route_attribute": [
+      {
+        "id": 11,
+        "title": "Return Reason",
+        "type": 3,
+        "value": "Return_reason"
+      },
+      {
+        "id": 8,
+        "title": "Invoice Number",
+        "type": 3,
+        "value": "0000-0000-0000"
+      },
+      {
+        "id": 14,
+        "title": "Retailer",
+        "type": 4,
+        "value": "High note performance, ADESHWARS RYDERS ARENA , LRL motors , GT House, Bikerdriod"
+      },
+      {
+        "id": 12,
+        "title": "Warehouse",
+        "type": 4,
+        "value": "Bangalore, Delhi"
+      },
+      {
+        "id": 7,
+        "title": "Channel",
+        "type": 4,
+        "value": "Amazon, Shopify, Retail, Factory, Corporate "
+      },
+      {
+        "id": 10,
+        "title": "Date_entered",
+        "type": 1,
+        "value": "date"
+      },
+      {
+        "id": 9,
+        "title": "Stockists",
+        "type": 4,
+        "value": "Maharastra, South India, Mohali"
+      },
+      {
+        "id": 13,
+        "title": "Supplier",
+        "type": 4,
+        "value": "WildStone, Saaravi,Kola , Naushad"
+      },
+      {
+        "id": 15,
+        "title": "dummy",
+        "type": 4,
+        "value": "dummy 1, dummy 2"
+      }
+    ]
+  }
+}
