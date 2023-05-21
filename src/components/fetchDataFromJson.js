@@ -3,13 +3,13 @@ import attributeData from "../json/attribute.json";
 import routeStatusAttributeData from "../json/route.json";
 
 export const GET_STATUS_ALL = () => {
-  return statusData;
+  return statusData['data']['carbonado_z_route_status'];
 };
 
 export const GET_ATTRIBUTE_ALL = () => {
-  return attributeData;
+  return attributeData['data']['carbonado_z_route_attribute'];
 };
 
 export const GET_ROUTE_STATUS_ATTRIBUTE = () => {
-  return routeStatusAttributeData;
+  return routeStatusAttributeData['data']['carbonado_z_route_code'];
 };

@@ -24,7 +24,6 @@ import {
 } from "@chakra-ui/react";
 import { Link as ReachLink } from "react-router-dom";
 import React, { useMemo } from "react";
-import { useSchema } from "./components/useSchemaHooks";
 import { useState } from "react";
 import ReactEcharts from "echarts-for-react";
 import {
@@ -37,18 +36,23 @@ import {
 } from "@chakra-ui/react";
 // import Reports from "./Reports/Reports";
 
-
 import { DownloadIcon } from "@chakra-ui/icons";
 import { saveAs } from "file-saver";
+import {
+  GET_STATUS_ALL,
+  GET_ATTRIBUTE_ALL,
+  GET_ROUTE_STATUS_ATTRIBUTE,
+} from "../src/components/fetchDataFromJson.js";
 
 const InventoryTracking_Embed = () => {
-  const statusTable = useSchema("", "status");
-  const attributeTable = useSchema("", "attribute");
-  const routeTable = useSchema("", "route");
+  const statusTable = GET_STATUS_ALL();
+  const attributeTable = GET_ATTRIBUTE_ALL();
+  const routeTable = GET_ROUTE_STATUS_ATTRIBUTE();
 
-  console.log(statusTable, attributeTable,routeTable);
-  const { loading, data, refetch } = statusTable['data']['carbonado_z_route_status'];
-  const { loading: aLoading, data: aData } = attributeTable['data']['carbonado_z_route_attribute'];
+  // console.log(statusTable, attributeTable,routeTable);
+
+  const { loading, data, refetch } = statusTable;
+  const { loading: aLoading, data: aData } = attributeTable;
 
   // code for status and attribute form submission
 
@@ -76,7 +80,8 @@ const InventoryTracking_Embed = () => {
     loading: qloading,
     data: qdata,
     refetch: qrefetch,
-  } = ((routeTable['data']['carbonado_z_route_code']), {
+  } = (routeTable,
+  {
     variables: {
       status: statusId,
       attribute: attributeId,
